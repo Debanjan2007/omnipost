@@ -49,3 +49,13 @@
     --radius-xl: 14px;
     --radius-2xl: 18px;
 }
+
+/* Hide vertical scrollbar but keep scroll working */
+.hide-scrollbar {
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;               /* Chrome/Safari */
+}
