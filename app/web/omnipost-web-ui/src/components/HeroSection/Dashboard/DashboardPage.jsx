@@ -27,7 +27,7 @@ export default function DashboardPage() {
             </div>
 
             {/* 📈 Bottom Grid */}
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 items-stretch">
 
                 {/* Dashboard Quick Panel */}
                 <div className="xl:col-span-2">
