@@ -43,7 +43,9 @@ export default function ActiveChannelsCard() {
                 ))}
 
                 {/* Add New */}
-                <button className="w-12 h-12 rounded-xl border border-dashed border-neutral-300 flex items-center justify-center text-text-secondary hover:bg-white hover:border-primary transition">
+                <button
+                    onClick={() => navigate('/accounts')}
+                    className="w-12 h-12 rounded-xl border border-dashed border-neutral-300 flex items-center justify-center text-text-secondary hover:bg-white hover:border-primary transition">
                     +
                 </button>
 

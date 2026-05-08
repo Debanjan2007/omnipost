@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function DashboardQuickPanel() {
+    const navigate = useNavigate();
     return (
         <div className="bg-background-soft border border-neutral-300 rounded-2xl p-5 shadow-card h-full">
 
@@ -9,7 +12,9 @@ export default function DashboardQuickPanel() {
                     Dashboard
                 </h2>
 
-                <button className="text-sm text-text-secondary hover:text-text-primary transition whitespace-nowrap">
+                <button
+                    onClick={() => navigate('/history')}
+                    className="text-sm text-text-secondary hover:text-text-primary transition whitespace-nowrap">
                     View All Posts
                 </button>
 

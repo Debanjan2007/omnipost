@@ -1,4 +1,5 @@
 import { LogosSvg as Logos } from "../../../assets/logos-svg.jsx";
+import { useNavigate } from "react-router-dom";
 
 const posts = [
     {
@@ -22,7 +23,7 @@ const posts = [
 ];
 
 export default function RecentActivityTable() {
-
+    const navigate = useNavigate();
     return (
         <div className="bg-background-soft border border-neutral-300 rounded-2xl overflow-hidden shadow-card">
 
@@ -33,7 +34,9 @@ export default function RecentActivityTable() {
                     Recent Activity
                 </h2>
 
-                <button className="border border-neutral-300 px-4 py-2 rounded-xl text-sm hover:bg-white transition">
+                <button
+                    onClick={() => navigate('/history')}
+                    className="border border-neutral-300 px-4 py-2 rounded-xl text-sm hover:bg-white transition">
                     View All Posts
                 </button>
 
@@ -42,7 +45,7 @@ export default function RecentActivityTable() {
             {/* 📊 Table */}
             <div className="overflow-x-auto">
 
-                <table className="w-full min-w-[700px] text-sm">
+                <table className="w-full min-w-175 text-sm">
 
                     {/* Table Head */}
                     <thead className="bg-primary-light/10 text-text-secondary">
