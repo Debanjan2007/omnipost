@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function DashboardTabs() {
+    const navigate = useNavigate();
     return (
         <div className="flex items-center justify-between mb-6">
 
@@ -16,7 +19,9 @@ export default function DashboardTabs() {
             </div>
 
             {/* Create Post */}
-            <button className="ml-6 shrink-0 bg-primary hover:bg-primary-dark text-white text-sm font-medium px-4 py-2 rounded-xl transition">
+            <button
+                onClick={() => navigate('/create')}
+                className="ml-6 shrink-0 bg-primary hover:bg-primary-dark text-white text-sm font-medium px-4 py-2 rounded-xl transition">
                 Create Post
             </button>
 
