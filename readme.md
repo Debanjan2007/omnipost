@@ -16,28 +16,53 @@
 
 ## 📌 Overview
 
-OmniPost is an experimental project focused on improving how content is created and distributed across multiple platforms.
+OmniPost is an experimental content creation and publishing UI built to explore how creators can manage posts and connected channels from a single interface.
 
-The project is currently in its initial development phase and does **not** represent a finished or stable product.
+The repository currently contains the frontend web application. Backend services and integrations are planned for later phases.
 
 ---
 
 ## ⚙️ Current Status
 
-- 🧱 Project setup in progress
-- 🧪 Core ideas under experimentation
-- ❌ No stable release
+- ✅ Frontend scaffold created with Vite and React
+- ✅ UI layout, pages, and core dashboard components added
+- ⚙️ Feature development is ongoing
+- 🚧 No production release yet
 
 ---
 
-## 🛠️ Tech Stack (tentative)
+## 📁 Project Structure
 
-- **Frontend:** React (Vite)
-- **Backend:** Node.js
-- **Queue/Workers:** Planned
-- **Storage:** TBD
+```text
+omnipost-open/
+├── app/
+│   └── web/
+│       └── omnipost-web-ui/
+│           ├── public/                  # Static assets and favicon/logo files
+│           ├── src/                     # Source code for the React app
+│           │   ├── assets/              # SVG icons and logo components
+│           │   ├── components/          # App UI components and sections
+│           │   └── index.css            # Global styles
+│           │   └── main.jsx             # App entry point
+│           │   └── Layout.jsx           # Shared layout wrapper
+│           ├── package.json             # Frontend dependencies and scripts
+│           ├── vite.config.js           # Vite configuration
+│           └── eslint.config.js         # ESLint configuration
+├── .gitignore
+└── readme.md
+```
 
-> ⚠️ Stack choices are not final and may change.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 19, Vite, Tailwind CSS
+- **Routing:** React Router DOM
+- **Linting:** ESLint
+- **Package management:** npm
+- **Build tool:** Vite
+
+> Note: This workspace currently contains the frontend app only.
 
 ---
 
@@ -45,13 +70,33 @@ The project is currently in its initial development phase and does **not** repre
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Debanjan2007/Omnipost.git
 
-# Navigate into the project
-cd omnipost
+# Change into the frontend app directory
+cd omnipost-open/app/web/omnipost-web-ui
 
 # Install dependencies
 npm install
 
-# Start development server
+# Start the development server
 npm run dev
+```
+
+Then open the local development URL shown by Vite in your browser.
+
+---
+
+## 🧩 Available Scripts
+
+From `app/web/omnipost-web-ui`:
+
+- `npm run dev` — start the Vite development server
+- `npm run build` — build the production bundle
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint checks
+
+---
+
+## 👤 Contributor
+
+- Debanjan
