@@ -6,6 +6,7 @@ import Layout from "./Layout.jsx";
 import { CreatePost , Accounts , History } from "./components/index.jsx";
 import DashboardPage from "./components/HeroSection/Dashboard/DashboardPage.jsx";
 import ErrorPage from "./components/Error/Errorpage.jsx";
+import SettingsPage from "./components/HeroSection/Settings.section.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -15,7 +16,7 @@ const router = createBrowserRouter(
                 <Route path='create' element={<CreatePost/>}/>
                 <Route path='accounts' element={<Accounts/>}/>
                 <Route path='history' element={<History/>}/>
-                <Route path='settings'/>
+                <Route path='settings' element={<SettingsPage/>}/>
             </Route>,
                 <Route path='*' element={<ErrorPage/>}/>
         </>
