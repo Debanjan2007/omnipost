@@ -10,6 +10,7 @@ import SettingsPage from "./components/HeroSection/Settings.section.jsx";
 import UserProfilePage from "./components/HeroSection/UserInfo.section.jsx";
 import LandingPage from "./components/Landing-page/Landingpage.jsx";
 import LoginPage from "./components/Login-signup/LoginPage.jsx";
+import SignupPage from "./components/Login-signup/SignupPage.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
                 <Route path='*' element={<ErrorPage/>}/>
             <Route path='/' element={<LandingPage/>}/>
             <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/signup' element={<SignupPage/>}/>
         </>
     )
 )
