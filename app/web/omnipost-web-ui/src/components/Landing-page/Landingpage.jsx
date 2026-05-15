@@ -44,14 +44,15 @@ export default function LandingPage() {
 
                 {/* Actions */}
                 <div className="flex items-center gap-3">
-
+                <Link to='/login'>
                     <button
                         className="hidden md:flex border border-neutral-400 hover:border-primary text-text-primary hover:text-primary transition px-5 py-2.5 rounded-2xl text-sm font-medium">
                         Log In
                     </button>
+                </Link>
 
                     <Link
-                        to="/login"
+                        to="/signup"
                         className="bg-primary hover:bg-primary-dark text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-2xl text-sm font-medium transition shadow-md whitespace-nowrap"
                     >
                         Start Free Trial
