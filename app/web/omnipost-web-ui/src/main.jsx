@@ -7,18 +7,26 @@ import { CreatePost , Accounts , History } from "./components/index.jsx";
 import DashboardPage from "./components/HeroSection/Dashboard/DashboardPage.jsx";
 import ErrorPage from "./components/Error/Errorpage.jsx";
 import SettingsPage from "./components/HeroSection/Settings.section.jsx";
+import UserProfilePage from "./components/HeroSection/UserInfo.section.jsx";
+import LandingPage from "./components/Landing-page/Landingpage.jsx";
+import LoginPage from "./components/Login-signup/LoginPage.jsx";
+import SignupPage from "./components/Login-signup/SignupPage.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
-            <Route path='/' element={<Layout/>}>
+            <Route path='/user' element={<Layout/>}>
                 <Route path='dashboard' element={<DashboardPage/>}/>
                 <Route path='create' element={<CreatePost/>}/>
                 <Route path='accounts' element={<Accounts/>}/>
                 <Route path='history' element={<History/>}/>
                 <Route path='settings' element={<SettingsPage/>}/>
+                <Route path='userinfo' element={<UserProfilePage />}/>
             </Route>,
                 <Route path='*' element={<ErrorPage/>}/>
+            <Route path='/' element={<LandingPage/>}/>
+            <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/signup' element={<SignupPage/>}/>
         </>
     )
 )
