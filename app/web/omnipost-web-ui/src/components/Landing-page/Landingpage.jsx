@@ -5,7 +5,7 @@ export default function LandingPage() {
         <section className="min-h-screen bg-[#F7F5F2] overflow-hidden">
 
             {/* 🔷 Navbar */}
-            <nav className="w-full flex items-center justify-between px-5 sm:px-8 lg:px-16 py-5">
+            <nav className="relative z-30 w-full flex items-center justify-between px-5 sm:px-8 lg:px-16 py-5">
 
                 {/* Logo */}
                 <div className="flex items-center gap-3">
@@ -26,14 +26,13 @@ export default function LandingPage() {
                 </div>
 
                 {/* Nav Links */}
-                <div className="hidden lg:flex items-center gap-12">
+                <div className="hidden lg:flex items-center gap-8">
                     <Link to='/solution'>
                         <button className="text-text-primary hover:text-primary transition font-medium">
                             Solutions
                         </button>
                     </Link>
                     <Link to='/features'>
-
                         <button className="text-text-primary hover:text-primary transition font-medium">
                             Features
                         </button>
@@ -41,6 +40,16 @@ export default function LandingPage() {
                     <Link to='/pricing'>
                         <button className="text-text-primary hover:text-primary transition font-medium">
                             Pricing
+                        </button>
+                    </Link>
+                    <Link to='/about'>
+                        <button className="text-text-primary hover:text-primary transition font-medium">
+                            About
+                        </button>
+                    </Link>
+                    <Link to='/contact'>
+                        <button className="text-text-primary hover:text-primary transition font-medium">
+                            Contact
                         </button>
                     </Link>
 
