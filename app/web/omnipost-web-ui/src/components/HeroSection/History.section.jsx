@@ -1,4 +1,3 @@
-import React from "react";
 import { LogosSvg as logos} from '../../assets/logos-svg.jsx'
 
 const historyData = [
