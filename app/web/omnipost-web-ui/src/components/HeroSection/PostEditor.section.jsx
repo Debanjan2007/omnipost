@@ -18,7 +18,6 @@ export default function PostEditor({ onBack }) {
         setImages((prev) => prev.filter((_, i) => i !== index));
     };
     const [content, setContent] = useState("");
-    const [date, setDate] = useState("");
     const [platforms, setPlatforms] = useState([]);
     const [images, setImages] = useState([]);
     const fileInputRef = useRef();
